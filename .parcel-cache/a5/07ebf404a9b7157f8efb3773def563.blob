@@ -1,0 +1,34 @@
+var div1 = document.createElement('div')
+div1.className = "demo"
+document.body.appendChild(div1)
+
+// console.log("1")
+// 设置个开关 来判断什么时候可以拖拽什么时候停下。
+var dragging = false
+
+var lastX
+var lastY
+// 鼠标点下不松
+div1.onmousedown = function(e){
+    lastX = e.clientX
+    lastY = e.clientY
+    // console.log("原始位置"+e.clientX,e.clientY)
+    dragging = true
+}
+
+document.body.onmousemove = function(e){
+    // console.log(e.clientX, e.clientY)
+    if(dragging === true){
+        console.log(lastX,lastY)
+        console.log(e.clientX, e.clientY)
+        var deltaX = e.clientX - lastX
+        var deltaY = e.clientY - lastY
+        var top parseInt(div1.)
+        div1.style.top = deltaY + div1.style.top
+        div1.style.left =deltaX + div1.style.left
+    }
+}
+// 鼠标松开
+div1.onmouseup = function(){
+    dragging = false
+}

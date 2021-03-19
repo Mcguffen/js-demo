@@ -1,0 +1,22 @@
+var div1 = document.createElement('div')
+div1.className = "demo"
+document.body.appendChild(div1)
+
+// console.log("1")
+var x = false
+
+div1.onmousedown = function(){
+    x = true
+}
+
+document.body.onmousemove = function(e){
+    // console.log(e.clientX, e.clientY)
+    if(x === true){
+        
+    }
+    c
+}
+
+// div1.onmouseup = function(){
+//     x = false
+// }

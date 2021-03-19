@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+自动刷新 这么神奇吗》？ npx parcel + index.html但是呢有条件 必须有1个js
+下面这个引入js文件 如果删掉就不行啦。 xian
+    <!-- <script src="./main.js"></script> -->
+</body>
+</html><script src="202f65accccb6071212b96a1d3c27081"></script>

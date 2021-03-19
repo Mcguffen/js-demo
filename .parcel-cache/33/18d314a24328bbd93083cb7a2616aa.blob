@@ -1,0 +1,23 @@
+var div1 = document.createElement('div')
+div1.className = "demo"
+document.body.appendChild(div1)
+
+// console.log("1")
+// 设置个开关x 来判断什么时候可以拖拽什么时候停下。
+var x = false
+// 鼠标点下不松
+div1.onmousedown = function(){
+    x = true
+}
+
+document.body.onmousemove = function(e){
+    // console.log(e.clientX, e.clientY)
+    if(x === true){
+        div1.style.top = e.clientY + "px"
+        div1.style.left =e.clientX + "px"
+    }
+}
+// 鼠标松开
+div1.onmouseup = function(){
+    x = false
+}
